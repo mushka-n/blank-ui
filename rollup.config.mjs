@@ -4,7 +4,6 @@ import typescript from "@rollup/plugin-typescript";
 import dts from "rollup-plugin-dts";
 import postcss from "rollup-plugin-postcss";
 import tailwind from "rollup-plugin-tailwindcss"; 
-import alias from "@rollup/plugin-alias";
 
 import packageJson from "./package.json" assert { type: "json" };
 
@@ -31,14 +30,12 @@ export default [
         config: { path: "./postcss.config.js" },
         extensions: [".css"],
         minimize: true,
+        modules: true,
         inject: { insertAt: "top" },
       }),
       tailwind({
         input: "src/tailwind.css",
         purge: false,
-      }),
-      alias({
-        entries: [{ find: "@/", replacement: "./src" }],
       }),
     ],
   },

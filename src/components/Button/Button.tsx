@@ -1,6 +1,5 @@
 import React from 'react';
 
-import '@/styles/tailwind.css';
 import { merge } from '@/styles/utils';
 
 import { getButtonSize, getButtonVariant } from './Button.styles';
