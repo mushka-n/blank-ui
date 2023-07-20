@@ -9,6 +9,7 @@ const Button = ({
   className,
   size = 'medium',
   variant = 'primary',
+  onClick,
   children,
 }: ButtonProps) => {
   return (
@@ -19,6 +20,7 @@ const Button = ({
         getButtonVariant(variant),
         className
       )}
+      onClick={onClick}
     >
       {children}
     </button>

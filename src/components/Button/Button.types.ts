@@ -17,5 +17,6 @@ export default interface ButtonProps {
   className?: string;
   size?: ButtonSize;
   variant?: ButtonVariant;
+  onClick?: () => void;
   children: React.ReactNode;
 }
