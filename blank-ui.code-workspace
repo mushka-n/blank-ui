@@ -1,0 +1,38 @@
+{
+  "folders": [
+    {
+      "name": "🌎 root",
+      "path": "./"
+    },
+    {
+      "name": "📱 @/src",
+      "path": "./src"
+    }
+  ],
+  "settings": {
+    "tailwindCSS.experimental.classRegex": [
+      "cn\\('([^)]*)\\')",
+      "(?:'|\"|`)([^\"'`]*)(?:'|\"|`)"
+    ]
+  },
+  "tasks": {
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "Storybook",
+        "type": "shell",
+        "command": "npm run storybook",
+        "problemMatcher": []
+      },
+      {
+        "label": "Rollup",
+        "type": "shell",
+        "command": "npm run rollup-c",
+        "problemMatcher": []
+      }
+    ]
+  },
+  "extensions": {
+    "recommendations": ["bradlc.vscode-tailwindcss"]
+  }
+}
