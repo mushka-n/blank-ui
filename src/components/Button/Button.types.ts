@@ -13,10 +13,9 @@ export type ButtonVariant =
   | 'danger'
   | 'success';
 
-interface ButtonProps {
+export default interface ButtonProps {
   className?: string;
-  size: ButtonSize;
-  variant: ButtonVariant;
+  size?: ButtonSize;
+  variant?: ButtonVariant;
   children?: React.ReactNode;
 }
-export default ButtonProps;
