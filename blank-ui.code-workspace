@@ -27,7 +27,7 @@
       {
         "label": "Rollup",
         "type": "shell",
-        "command": "npm run rollup-c",
+        "command": "npm run rollup -c && npm publish",
         "problemMatcher": []
       }
     ]
