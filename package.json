@@ -1,6 +1,6 @@
 {
   "name": "@mushka-n/blank-ui",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "React Component library built with Radix Primitives and TailwindCSS and heavily inspired by TailwindUI",
   "scripts": {
     "rollup": "rollup -c",
