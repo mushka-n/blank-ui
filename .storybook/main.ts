@@ -6,6 +6,7 @@ const config: StorybookConfig = {
     '@storybook/addon-links',
     '@storybook/addon-essentials',
     '@storybook/addon-interactions',
+    '@storybook/addon-storysource',
     {
       name: '@storybook/addon-postcss',
       options: {
@@ -20,8 +21,7 @@ const config: StorybookConfig = {
   ],
   framework: {
     name: '@storybook/react-vite',
-    options: {
-    },
+    options: {},
   },
   docs: {
     autodocs: 'tag',

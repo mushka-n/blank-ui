@@ -1,6 +1,6 @@
 import { tw } from '@/styles/utils';
 
-import { ButtonSize, ButtonVariant } from './Button.types';
+import { ButtonSize, ButtonVariant } from './Button.props';
 
 export const getButtonSize = (size: ButtonSize) => {
   switch (size) {

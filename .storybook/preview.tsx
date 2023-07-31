@@ -8,9 +8,9 @@ const preview: Preview = {
     theme: {
       defaultValue: 'light',
       toolbar: {
-        title: 'Theme',
-        icon: 'circlehollow',
-        items: ['light', 'dark'],
+        title: '',
+        icon: 'mirror',
+        items: ['Light', 'Dark', 'Side-to-side'],
         dynamicTitle: false,
       },
     },

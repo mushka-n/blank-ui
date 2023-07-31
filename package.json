@@ -19,7 +19,6 @@
     "registry": "https://npm.pkg.github.com/mushka-n"
   },
   "devDependencies": {
-    "@rollup/plugin-alias": "^5.0.0",
     "@rollup/plugin-commonjs": "^25.0.2",
     "@rollup/plugin-node-resolve": "^15.1.0",
     "@rollup/plugin-typescript": "^11.1.1",
@@ -27,6 +26,7 @@
     "@storybook/addon-interactions": "^7.1.0",
     "@storybook/addon-links": "^7.1.0",
     "@storybook/addon-postcss": "^2.0.0",
+    "@storybook/addon-storysource": "^7.1.0",
     "@storybook/blocks": "^7.1.0",
     "@storybook/manager-api": "^7.1.0",
     "@storybook/react": "^7.1.0",

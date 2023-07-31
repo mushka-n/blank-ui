@@ -1,16 +1,26 @@
-.theme-decorator {
+.theme-decorator,
+.theme-decorator.side-to-side .light,
+.theme-decorator.side-to-side .dark {
+  box-sizing: border-box;
   width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background-color 0.1s ease-in-out;
 }
 
-.theme-decorator.light {
+.theme-decorator.side-to-side {
+  flex-direction: row;
+}
+
+.theme-decorator.light,
+.theme-decorator.side-to-side .light {
   background-color: #fff;
+  padding: 16px;
 }
 
-.theme-decorator.dark {
+.theme-decorator.dark,
+.theme-decorator.side-to-side .dark {
   background-color: #111627;
+  padding: 16px;
 }

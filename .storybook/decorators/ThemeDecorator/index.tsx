@@ -3,11 +3,28 @@ import React from 'react';
 import './styles.css';
 
 const ThemeDecorator = (Story: any, context: any) => {
-  const theme = context.globals.theme === 'dark' ? 'dark' : 'light';
+  if (context.globals.theme === 'Light')
+    return (
+      <div className={`theme-decorator light`}>
+        <Story />
+      </div>
+    );
+
+  if (context.globals.theme === 'Dark')
+    return (
+      <div className={`theme-decorator dark`}>
+        <Story />
+      </div>
+    );
 
   return (
-    <div className={`theme-decorator ${theme}`}>
-      <Story />
+    <div className={`theme-decorator side-to-side`}>
+      <div className='light'>
+        <Story />
+      </div>
+      <div className='dark'>
+        <Story />
+      </div>
     </div>
   );
 };
