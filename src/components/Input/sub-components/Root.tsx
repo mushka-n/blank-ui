@@ -64,4 +64,5 @@ const Root = ({ className, children, ...props }: RootProps) => {
   );
 };
 
+Root.displayName = 'Input.Root';
 export default Root;

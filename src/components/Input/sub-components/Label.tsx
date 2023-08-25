@@ -18,4 +18,5 @@ const Label = ({ className, children, ...props }: LabelProps) => {
   );
 };
 
+Label.displayName = 'Input.Label';
 export default Label;

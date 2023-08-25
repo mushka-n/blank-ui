@@ -6,7 +6,7 @@ import ThemeDecorator from './decorators/ThemeDecorator';
 const preview: Preview = {
   globalTypes: {
     theme: {
-      defaultValue: 'light',
+      defaultValue: 'Light',
       toolbar: {
         title: '',
         icon: 'mirror',

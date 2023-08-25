@@ -13,12 +13,12 @@ export type ButtonVariant =
   | 'danger'
   | 'success';
 
-export default interface ButtonProps {
-  id: string;
+export default interface ButtonProps
+  extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   className?: string;
   size?: ButtonSize;
   variant?: ButtonVariant;
-  onClick?: () => void;
-  isDisabled: boolean;
+  isDisabled?: boolean;
+  asChild?: boolean;
   children: React.ReactNode;
 }

@@ -18,4 +18,5 @@ const Hint = ({ className, children, ...props }: HintProps) => {
   );
 };
 
+Hint.displayName = 'Input.Hint';
 export default Hint;

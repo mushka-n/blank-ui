@@ -42,4 +42,5 @@ Input.Hint = Hint;
 Input.Addon = Addon;
 Input.Info = Info;
 
+Input.displayName = 'Input';
 export default Input;

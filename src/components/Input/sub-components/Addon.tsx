@@ -28,4 +28,5 @@ const Addon = ({ className, position, onClick, children }: AddonProps) => {
   );
 };
 
+Addon.displayName = 'Input.Addon';
 export default Addon;

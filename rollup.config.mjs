@@ -3,7 +3,6 @@ import commonjs from "@rollup/plugin-commonjs";
 import typescript from "@rollup/plugin-typescript";
 import dts from "rollup-plugin-dts";
 import postcss from "rollup-plugin-postcss";
-import tailwind from "rollup-plugin-tailwindcss"; 
 
 import packageJson from "./package.json" assert { type: "json" };
 
@@ -32,10 +31,6 @@ export default [
         minimize: true,
         modules: true,
         inject: { insertAt: "top" },
-      }),
-      tailwind({
-        input: "src/tailwind.css",
-        purge: false,
       }),
     ],
   },

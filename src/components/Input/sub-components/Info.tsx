@@ -18,4 +18,5 @@ const Info = ({ className, children, ...props }: InfoProps) => {
   );
 };
 
+Info.displayName = 'Input.Info';
 export default Info;

@@ -17,9 +17,8 @@ const meta: Meta<typeof Button> = {
     },
     isDisabled: { control: 'boolean' },
 
-    id: { table: { disable: true } },
     className: { table: { disable: true } },
-    onClick: { table: { disable: true } },
+    asChild: { table: { disable: true } },
   },
 };
 export default meta;
@@ -33,9 +32,20 @@ export const Preview: Story = {
     isDisabled: false,
   },
   decorators: [
-    (Story: any) => {
+    (Story: any, context) => {
+      const { args } = context;
+      console.log(context.args);
       const onClick = () => console.log('Clicked!');
-      return <Story onClick={onClick} />;
+      return (
+        <Button
+          onClick={onClick}
+          size={args.size}
+          variant={args.variant}
+          isDisabled={args.isDisabled}
+        >
+          {args.children}
+        </Button>
+      );
     },
   ],
 };
